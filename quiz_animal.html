@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quz de Animais</title>
+</head>
+<body>
+    
+<h1>Bem-vindo ao Quiz de animais</h1>
+
+<button id="iniciar">Iniciar o Quiz</button>
+
+<script>
+    const iniciar = document.getElementById('iniciar');
+    
+
+    function quiz() {
+    alert('Bem-vindo ao Quiz de animais!');
+
+    const questao1 = Number(prompt("Questão 1: \n Onde vivem os ursos negros? \n 1 - Austrália \n 2 - EUA \n 3 - Brasil"));
+    const questao2 = Number(prompt("Questão 2: \n O que os Ursos Polares comem? \n 1 - Orca \n 2 - Pinguim \n 3 - Peixe"));
+    const questao3 = Number(prompt("Questão 3: \n Quantos tentáculos uma Água-Viva tem? \n 1 - 4 tentáculos \n 2 - 5 tentáculos \n 3 - 6 tentáculos"));
+    const questao4 = Number(prompt("Questão 4: \n Qual dessas aves é conhecida por não conseguir voar, mas ser uma excelente nadadora \n 1 - Pelicano \n 2 - Pinguim \n 3 - Albatroz"));
+    const questao5 = Number(prompt("Questão 5: \n Qual mamífero marinho é famoso por cantar canções complexas que podem durar horas? \n 1 - Baleia-jubarte \n 2 - Golfinho-nariz-de-garrafa \n 3 - Orca"));
+    const questao6 = Number(prompt("Questão 6: \n Os tubarões são peixes fascinantes, mas de que material é feito a maior parte do seu esqueleto? \n 1 - Osso denso \n 2 - Queratina \n 3 - Cartilagem"));
+    const questao7 = Number(prompt("Questão 7: \n Qual destes animais é um marsupial, o que significa que carrega os filhotes em uma bolsa? \n 1 - Tamanduá \n 2 - Coala \n 3 - Preguiça"));
+    const questao8 = Number(prompt("Questão 8: \n Quanto tempo dura, em média, a gestação de um elefante-africano? \n 1 - 12 meses \n 2 - 22 meses \n 3 - 18 meses"));
+    const questao9 = Number(prompt("Questão 9: \n Qual é a principal característica física que diferencia as cobras venenosas das não venenosas na maioria das espécies? \n 1 - O formato das pupilas (fendidas verticalmente nas venenosas) \n 2 - A cor brilhante das escamas \n 3 - O comprimento total do corpo"));
+    const questao10 = Number(prompt("Questão 10: \n O ornitorrinco é um animal único. O que o torna tão especial no grupo dos mamíferos? \n 1 - Ele não respira fora da água \n 2 - Ele bota ovos \n 3 - Ele possui sangue frio"));
+    const questao11 = Number(prompt("Questão 11: \n Qual destes grandes felinos vive e caça em grupos estruturados chamados de coalizões ou bandos? \n 1 - Leopardo \n 2 - Tigre \n 3 - Leão"));
+    const questao12 = Number(prompt("Questão 12: \n Qual o principal mecanismo que os camaleões usam para mudar de cor? \n 1 - Células especiais na pele chamadas cromatóforos \n 2 - Reação química com o oxigênio do ar \n 3 - Absorção da luz solar direta"));
+    const questao13 = Number(prompt("Questão 13: \n De qual continente os lêmures são nativos e exclusivos na natureza? \n 1 - Oceania \n 2 - África (especificamente na ilha de Madagascar) \n 3 - Ásia"));
+
+    // respostas
+
+    const resposta1 = "2 - EUA";
+    const resposta2 = "3 - Peixe";
+    const resposta3 = "2 - 5 tentáculos";
+    const resposta4 = "2 - Pinguim";
+    const resposta5 = "1 - Baleia-jubarte";
+    const resposta6 = "3 - Cartilagem";
+    const resposta7 = "2 - Coala";
+    const resposta8 = "2 - 22 meses";
+    const resposta9 = "1 - O formato das pupilas";
+    const resposta10 = "2 - Ele bota ovos";
+    const resposta11 = "3 - Leão";
+    const resposta12 = "1 - Células especiais na pele chamadas cromatóforos";
+    const resposta13 = "2 - África";
+
+    // 1
+    switch (questao1) {
+        case 1: 
+        alert("Parabéns, você acertou!");
+            break;
+
+        case 2: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta1}`);
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta1}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 2
+    switch (questao2) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta2}`);
+            break;
+
+        case 2: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta2}`);
+            break;
+        case 3:
+        alert("Parabéns, você acertou!");
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 3
+    switch (questao3) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta3}`);
+            break;
+
+        case 2: 
+        alert("Parabéns, você acertou!"); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta3}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 4
+    switch (questao4) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta4}`);
+            break;
+
+        case 2: 
+        alert("Parabéns, você acertou!"); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta4}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 5
+    switch (questao5) {
+        case 1: 
+        alert("Parabéns, você acertou!"); 
+            break;
+
+        case 2: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta5}`); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta5}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 6
+    switch (questao6) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta6}`);
+            break;
+
+        case 2: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta6}`); 
+            break;
+        case 3:
+        alert("Parabéns, você acertou!"); 
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 7
+    switch (questao7) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta7}`);
+            break;
+
+        case 2: 
+        alert("Parabéns, você acertou!"); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta7}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 8
+    switch (questao8) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta8}`);
+            break;
+
+        case 2: 
+        alert("Parabéns, você acertou!"); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta8}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 9
+    switch (questao9) {
+        case 1: 
+        alert("Parabéns, você acertou!"); 
+            break;
+
+        case 2: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta9}`); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta9}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 10
+    switch (questao10) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta10}`);
+            break;
+
+        case 2: 
+        alert("Parabéns, você acertou!"); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta10}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 11
+    switch (questao11) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta11}`);
+            break;
+
+        case 2: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta11}`); 
+            break;
+        case 3:
+        alert("Parabéns, você acertou!"); 
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 12
+    switch (questao12) {
+        case 1: 
+        alert("Parabéns, você acertou!"); 
+            break;
+
+        case 2: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta12}`); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta12}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+
+    // 13 
+    switch (questao13) {
+        case 1: 
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta13}`);
+            break;
+
+        case 2: 
+        alert("Parabéns, você acertou!"); 
+            break;
+        case 3:
+        alert(`Putz, você errou :( ! A resposta correta era: ${resposta13}`);
+            break;
+        default:
+        alert("Opção inválida!");
+    }
+}
+
+
+    iniciar.addEventListener('click', quiz);
+</script>
+</body>
+</html>
